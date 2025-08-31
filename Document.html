@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://127.0.0.1:5500/mypage02.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /* selecter คือ จุดที่จะใส่ css */
+      h1 {
+        text-align: center;
+        color: #ff0000;
+      }
+      h3{
+        text-align: center;
+        color: #2b00ff;
+        text-decoration: underline;
+      }
+      #aa{
+        text-align: center;
+        margin-left: 100px;
+        margin-right: 100px;
+      }
+      #bb{
+        text-align: center;
+        color: #9500ff;
+        margin-left: 150px;
+        margin-right: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- css เเบบที่1 : internal style -->
+    <h1>Welcome to DTI-SAU</h1>
+    <h3>Techonology digital and innovation</h3>
+    <p id="aa">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quod
+      totam nemo veniam. Cupiditate mollitia fugiat, sed, iste ipsam
+      exercitationem laborum voluptatem dolorum velit tempora fuga deleniti,
+      suscipit quos vitae.
+    </p>
+    <hr>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem
+      ut, suscipit nam corrupti impedit sed ratione expedita tempore delectus ea
+      mollitia, ex veniam, ab laboriosam nisi excepturi officia dicta
+      cupiditate?
+    </p>
+    <hr>
+    <div>
+    <img src="./Document_files/imgA.png" alt="ม้า">
+    <img src="./Document_files/imgB.png" alt="หมา">
+    <img src="./Document_files/imgC.png" alt="งู">
+    </div>
+    <div>
+        <span>created by rapeepat ☮💥💓💢❣💟☮⛎⛎✝☮☯☦☪☪</span>
+        <span>copyright © 2025</span>
+    </div>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
